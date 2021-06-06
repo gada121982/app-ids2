@@ -28,7 +28,8 @@ class Monitor extends Component {
             COUNT = COUNT + 1
             const LENGTH = features ? features.length : 0
             const tr = document.createElement('tr')    
-        
+            
+            console.log("debug", `${typeof result} ${result}`)
             const td_result = document.createElement('td')
             let result_content = document.createTextNode(result ? 'Danger' : 'OK')
             
