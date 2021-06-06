@@ -42,7 +42,8 @@ app.get('/', (req, res) => {
 
 app.post('/feature', async (req, res) => {
   let {features} = req.body
-  features = features.replace('[', ' ').replace(']', ' ').trim().split(',')
+  console.log('feature', features) 
+  //features = features.replace('[', ' ').replace(']', ' ').trim().split(',')
 
   let features_clean = []
 

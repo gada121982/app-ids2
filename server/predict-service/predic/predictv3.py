@@ -18,10 +18,10 @@ from keras import backend as K
 import os
 #from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler, StandardScaler, LabelEncoder, Normalizer
-import PIL
+#import PIL
 import shutil
 import time
-from PIL import Image
+#from PIL import Image
 import shutil
 import re
 import math
@@ -60,9 +60,9 @@ def RF_Preprocessing(df):
     return df
 
 
-model_GRU_path = '/home/truc/doan/server/predict-service/GRU.h5'
-model_CNN_path = '/home/truc/doan/server/predict-service/cnn.h5'
-model_RF_path = '/home/truc/doan/server/predict-service/RandomForest.joblib'
+model_GRU_path = '/resource/app-ids2/server/predict-service/GRU.h5'
+model_CNN_path = '/resource/app-ids2/server/predict-service/cnn.h5'
+model_RF_path = '/resource/app-ids2/server/predict-service/RandomForest.joblib'
 
 
 def predict(features_array):
